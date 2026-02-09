@@ -1,7 +1,17 @@
 # RISE Commissioning Repo
-This is a snapshot of the analysis code used for the RISE commissioning paper (from Raw MDA files to fit results to paper figures). I only guarantee functionality on windows machines.
+This is a snapshot of the analysis code used for the RISE commissioning paper (from Raw MDA files to fit results to paper figures). All necessary steps for reproducing the analysis yourself are given below. For this analysis, I used 64-bit python 3.13 on Windows, with the following dependency list is:
+|Package|        Version I used|
+|-|-|
+|numpy|        2.2.5  |
+|sympy|        1.13.1 |
+|scipy|        1.15.2 |
+|pandas|       2.2.3  |
+|polars|       1.27.1 |
+|matplotlib|   3.10.1 |
+|lmfit|        1.3.3  |
+|numba|        0.61.2 |
 
-Below are the necessary steps to reproduce the analysis yourself:
+## Reproducing the analysis:
 
 1. **mda2ascii**
 The first thing you need is the mda2ascii program. Downloads for these used to be hosted at ANL.gov, but the webpage seems to have been taken down. MDA_Utilities can still be built locally using the github repo https://github.com/BCDA-APS/MDA_Utilities. I have also included the Windows executable in the "RISEAnalysisPackage" directory. This program should be added to your path.
