@@ -1,16 +1,19 @@
 # RISE Commissioning Repo
-This is a snapshot of the analysis code used for the RISE commissioning paper (from Raw MDA files to fit results to paper figures). All necessary steps for reproducing the analysis yourself are given below. For this analysis, I used 64-bit python 3.13 on Windows, with the following dependency list is:
+This is a snapshot of the analysis code used for the RISE commissioning paper (from Raw MDA files to fit results to paper figures). All necessary steps for reproducing the analysis yourself are given below. For this analysis, I used **64-bit python 3.13 on Windows**, with the following dependency list:
 |Package|        Version I used|
 |-|-|
-|numpy|        2.2.5  |
-|sympy|        1.13.1 |
-|scipy|        1.15.2 |
-|pandas|       2.2.3  |
-|polars|       1.27.1 |
-|matplotlib|   3.10.1 |
-|lmfit|        1.3.3  |
-|numba|        0.61.2 |
+|numpy|         2.2.5 |
+|sympy|         1.13.1|
+|scipy|         1.15.2|
+|pandas|        2.2.3 |
+|polars|        1.27.1|
+|matplotlib|    3.10.1|
+|lmfit|         1.3.3 |
+|numba|         0.61.2|
+|openpyxl|      3.1.5 |
+|pyarrow|       19.0.1|
 
+Any missing dependencies should automatically install when you pip install the RISE Analysis Package in step 2.
 ## Reproducing the analysis:
 
 1. **mda2ascii**
